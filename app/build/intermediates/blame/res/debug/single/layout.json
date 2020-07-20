@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_movie.xml",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\fragment_movie.xml"
+    },
+    {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_movie.xml",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\item_movie.xml"
+    }
+]
