@@ -8,36 +8,36 @@
         "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\drawable\\placeholder.jpg"
     },
     {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_placeholder2.jpg.flat",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\drawable\\placeholder2.jpg"
+    },
+    {
         "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_popular_movie.xml.flat",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\item_popular_movie.xml"
     },
     {
         "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
         "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_movie.xml.flat",
         "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\item_movie.xml"
     },
     {
-        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_search_24.xml.flat",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\drawable\\ic_baseline_search_24.xml"
     },
     {
-        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_movie.xml.flat",
-        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\activity_movie.xml"
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_upcoming_movie.xml.flat",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\item_upcoming_movie.xml"
     },
     {
         "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_movie.xml.flat",
-        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\fragment_movie.xml"
     },
     {
         "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
@@ -48,6 +48,54 @@
         "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search.xml.flat",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\activity_search.xml"
+    },
+    {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_movie_search.xml.flat",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\item_movie_search.xml"
+    },
+    {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_detail.xml.flat",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\activity_detail.xml"
+    },
+    {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_placeholder3.jpg.flat",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\drawable\\placeholder3.jpg"
+    },
+    {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_upcoming_movies.xml.flat",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\menu\\menu_upcoming_movies.xml"
+    },
+    {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_movie.xml.flat",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\activity_movie.xml"
+    },
+    {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_movie_similar.xml.flat",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\item_movie_similar.xml"
+    },
+    {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_movie.xml.flat",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\fragment_movie.xml"
+    },
+    {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_arrow_back_24.xml.flat",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\drawable\\ic_baseline_arrow_back_24.xml"
+    },
+    {
         "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
@@ -56,8 +104,8 @@
         "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_toprated_movie.xml.flat",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\item_toprated_movie.xml"
     },
     {
         "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
@@ -70,9 +118,5 @@
     {
         "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     }
 ]

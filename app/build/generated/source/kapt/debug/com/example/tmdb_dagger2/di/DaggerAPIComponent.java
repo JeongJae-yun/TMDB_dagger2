@@ -4,8 +4,12 @@ package com.example.tmdb_dagger2.di;
 import com.example.tmdb_dagger2.AppModule;
 import com.example.tmdb_dagger2.repository.RetrofitRepository;
 import com.example.tmdb_dagger2.repository.RetrofitRepository_MembersInjector;
-import com.example.tmdb_dagger2.view.MovieFragment;
-import com.example.tmdb_dagger2.viewmodel.MovieViewModel;
+import com.example.tmdb_dagger2.view.Detail.DetailActivity;
+import com.example.tmdb_dagger2.view.Detail.DetailViewModel;
+import com.example.tmdb_dagger2.view.Home.MovieFragment;
+import com.example.tmdb_dagger2.view.Home.MovieViewModel;
+import com.example.tmdb_dagger2.view.Search.SearchActivity;
+import com.example.tmdb_dagger2.view.Search.SearchViewModel;
 import com.example.tmdb_dagger2.viewmodel.MovieViewModelFactory;
 import com.example.tmdb_dagger2.viewmodel.MovieViewModelFactory_MembersInjector;
 import dagger.internal.DoubleCheck;
@@ -59,6 +63,22 @@ public final class DaggerAPIComponent implements APIComponent {
   @Override
   public void inject(MovieViewModelFactory movieViewModelFactory) {
     injectMovieViewModelFactory(movieViewModelFactory);}
+
+  @Override
+  public void inject(DetailActivity detailActivity) {
+  }
+
+  @Override
+  public void inject(DetailViewModel detailViewModel) {
+  }
+
+  @Override
+  public void inject(SearchActivity searchActivity) {
+  }
+
+  @Override
+  public void inject(SearchViewModel searchViewModel) {
+  }
 
   private RetrofitRepository injectRetrofitRepository(RetrofitRepository instance) {
     RetrofitRepository_MembersInjector.injectRetrofit(instance, provideRetrofitProvider.get());

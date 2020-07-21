@@ -14,26 +14,40 @@ public class FragmentMovieBindingImpl extends FragmentMovieBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.tv_title, 1);
-        sViewsWithIds.put(R.id.rv_nowPlaying, 2);
+        sViewsWithIds.put(R.id.cv_search, 1);
+        sViewsWithIds.put(R.id.tv_title, 2);
+        sViewsWithIds.put(R.id.rv_nowPlaying, 3);
+        sViewsWithIds.put(R.id.tv_title2, 4);
+        sViewsWithIds.put(R.id.rv_upComing, 5);
+        sViewsWithIds.put(R.id.tv_title3, 6);
+        sViewsWithIds.put(R.id.rv_popular, 7);
+        sViewsWithIds.put(R.id.tv_title4, 8);
+        sViewsWithIds.put(R.id.rv_topRated, 9);
     }
     // views
     @NonNull
-    private final androidx.constraintlayout.widget.ConstraintLayout mboundView0;
+    private final android.widget.ScrollView mboundView0;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public FragmentMovieBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 3, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 10, sIncludes, sViewsWithIds));
     }
     private FragmentMovieBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (androidx.recyclerview.widget.RecyclerView) bindings[2]
-            , (android.widget.TextView) bindings[1]
+            , (androidx.cardview.widget.CardView) bindings[1]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[3]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[7]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[9]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[5]
+            , (android.widget.TextView) bindings[2]
+            , (android.widget.TextView) bindings[4]
+            , (android.widget.TextView) bindings[6]
+            , (android.widget.TextView) bindings[8]
             );
-        this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
+        this.mboundView0 = (android.widget.ScrollView) bindings[0];
         this.mboundView0.setTag(null);
         setRootTag(root);
         // listeners

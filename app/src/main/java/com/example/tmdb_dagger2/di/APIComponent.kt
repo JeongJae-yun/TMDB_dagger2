@@ -18,8 +18,12 @@ package com.example.tmdb_dagger2.di
 
 import com.example.tmdb_dagger2.AppModule
 import com.example.tmdb_dagger2.repository.RetrofitRepository
-import com.example.tmdb_dagger2.view.MovieFragment
-import com.example.tmdb_dagger2.viewmodel.MovieViewModel
+import com.example.tmdb_dagger2.view.Detail.DetailActivity
+import com.example.tmdb_dagger2.view.Home.MovieFragment
+import com.example.tmdb_dagger2.view.Detail.DetailViewModel
+import com.example.tmdb_dagger2.view.Home.MovieViewModel
+import com.example.tmdb_dagger2.view.Search.SearchActivity
+import com.example.tmdb_dagger2.view.Search.SearchViewModel
 import com.example.tmdb_dagger2.viewmodel.MovieViewModelFactory
 import dagger.Component
 import javax.inject.Singleton
@@ -31,4 +35,8 @@ interface APIComponent {
     fun inject(movieViewModel: MovieViewModel)
     fun inject(movieFragment: MovieFragment)
     fun inject(movieViewModelFactory: MovieViewModelFactory)
+    fun inject(detailActivity: DetailActivity)
+    fun inject(detailViewModel: DetailViewModel)
+    fun inject(searchActivity: SearchActivity)
+    fun inject(searchViewModel: SearchViewModel)
 }

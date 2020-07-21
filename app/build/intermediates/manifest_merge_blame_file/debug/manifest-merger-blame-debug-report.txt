@@ -11,22 +11,22 @@
 9-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:5:5-66
+11-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:5:5-67
 11-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:7:5-25:19
+13-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:7:5-24:19
 14        android:name="com.example.tmdb_dagger2.MyRetroApplication"
-14-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:11:9-43
+14-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:8:9-43
 15        android:allowBackup="true"
-15-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:8:9-35
+15-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:9:9-35
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 16-->[androidx.core:core:1.3.0] C:\Users\jeong\.gradle\caches\transforms-2\files-2.1\0140a24afd4e9782cf5851116e617892\core-1.3.0\AndroidManifest.xml:24:18-86
 17        android:debuggable="true"
 18        android:icon="@mipmap/ic_launcher"
-18-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:9:9-43
-19        android:label="@string/app_name"
-19-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:10:9-41
+18-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:10:9-43
+19        android:label="TheMovieDB"
+19-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:11:9-35
 20        android:roundIcon="@mipmap/ic_launcher_round"
 20-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:12:9-54
 21        android:supportsRtl="true"
@@ -34,23 +34,25 @@
 22        android:testOnly="true"
 23        android:theme="@style/AppTheme" >
 23-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:14:9-40
-24        <activity android:name="com.example.tmdb_dagger2.view.MovieActivity" >
-24-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:15:9-21:20
-24-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:15:19-53
-25            <intent-filter>
-25-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:16:13-20:29
-26                <action android:name="android.intent.action.MAIN" />
-26-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:17:17-69
-26-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:17:25-66
-27
-28                <category android:name="android.intent.category.LAUNCHER" />
-28-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:19:17-77
-28-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:19:27-74
-29            </intent-filter>
-30        </activity>
-31        <activity android:name="com.example.tmdb_dagger2.MainActivity" >
-31-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:22:9-24:20
-31-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:22:19-47
+24        <activity android:name="com.example.tmdb_dagger2.view.Search.SearchActivity" />
+24-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:15:9-73
+24-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:15:19-61
+25        <activity android:name="com.example.tmdb_dagger2.view.Detail.DetailActivity" />
+25-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:16:9-64
+25-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:16:19-61
+26        <activity android:name="com.example.tmdb_dagger2.view.MovieActivity" >
+26-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:17:9-23:20
+26-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:17:19-53
+27            <intent-filter>
+27-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:18:13-22:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:19:17-69
+28-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:19:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:21:17-77
+30-->C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:21:27-74
+31            </intent-filter>
 32        </activity>
 33
 34        <provider

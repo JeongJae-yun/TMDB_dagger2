@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:2:1-26:12
 MERGED from [androidx.databinding:databinding-adapters:3.6.2] C:\Users\jeong\.gradle\caches\transforms-2\files-2.1\588b28ff7251f467391df873825246d4\databinding-adapters-3.6.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:3.6.2] C:\Users\jeong\.gradle\caches\transforms-2\files-2.1\3ccb288de9bdd1f1cc6da99ade8d6350\databinding-runtime-3.6.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.3.0] C:\Users\jeong\.gradle\caches\transforms-2\files-2.1\07bd7aacb22df48c0262d6a963aadd9f\jetified-core-ktx-1.3.0\AndroidManifest.xml:2:1-9:12
@@ -50,29 +50,29 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\jeong\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\jeong\.gradle\caches\transforms-2\files-2.1\0a7d6e36f7ccc36dc7744db937aaf77e\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\jeong\.gradle\caches\transforms-2\files-2.1\9cc269acf6ec0e86ffb089293ff5b4b0\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\jeong\.gradle\caches\transforms-2\files-2.1\ae7dfa9e42366dbf95bb068a275de01f\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:2:1-26:12
 	package
 		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:3:5-39
 		INJECTED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml
-		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:2:1-27:12
+		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:2:1-26:12
 		INJECTED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml
-		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:2:1-27:12
+		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:2:1-26:12
 		INJECTED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:5:5-66
+ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
 		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:7:5-25:19
+ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:7:5-24:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\jeong\.gradle\caches\transforms-2\files-2.1\10212d92959cd0999c70c5b2f315015a\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\jeong\.gradle\caches\transforms-2\files-2.1\10212d92959cd0999c70c5b2f315015a\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\jeong\.gradle\caches\transforms-2\files-2.1\8bc8ae081c020bf4e5e371c411dfe61b\lifecycle-extensions-2.1.0\AndroidManifest.xml:22:5-23:19
@@ -92,35 +92,39 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\jeong\.gradle
 	android:supportsRtl
 		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:11:9-35
 	android:roundIcon
 		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
 		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:14:9-40
 	android:name
-		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:8:9-43
+activity#com.example.tmdb_dagger2.view.Search.SearchActivity
+ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:15:9-73
+	android:name
+		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:15:19-61
+activity#com.example.tmdb_dagger2.view.Detail.DetailActivity
+ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:16:9-64
+	android:name
+		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:16:19-61
 activity#com.example.tmdb_dagger2.view.MovieActivity
-ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:15:9-21:20
+ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:17:9-23:20
 	android:name
-		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:15:19-53
+		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:17:19-53
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:16:13-20:29
+ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN
-ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:17:17-69
+ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:17:25-66
+		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:19:17-77
+ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:19:27-74
-activity#com.example.tmdb_dagger2.MainActivity
-ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:22:9-24:20
-	android:name
-		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:22:19-47
+		ADDED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml:21:27-74
 uses-sdk
 INJECTED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Dagger2_Study\TMDB_Dagger2\app\src\main\AndroidManifest.xml

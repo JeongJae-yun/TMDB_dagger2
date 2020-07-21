@@ -13,25 +13,27 @@ public class ItemMovieBindingImpl extends ItemMovieBinding  {
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
         sIncludes = null;
-        sViewsWithIds = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.cv_popular, 2);
     }
     // views
     @NonNull
-    private final androidx.cardview.widget.CardView mboundView0;
+    private final androidx.constraintlayout.widget.ConstraintLayout mboundView0;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public ItemMovieBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 2, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 3, sIncludes, sViewsWithIds));
     }
     private ItemMovieBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (androidx.cardview.widget.CardView) bindings[2]
             , (android.widget.ImageView) bindings[1]
             );
         this.ivPoster.setTag(null);
-        this.mboundView0 = (androidx.cardview.widget.CardView) bindings[0];
+        this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);
         setRootTag(root);
         // listeners
@@ -60,7 +62,7 @@ public class ItemMovieBindingImpl extends ItemMovieBinding  {
     public boolean setVariable(int variableId, @Nullable Object variable)  {
         boolean variableSet = true;
         if (BR.resultmodel == variableId) {
-            setResultmodel((com.example.tmdb_dagger2.model.data.NowPlayItem) variable);
+            setResultmodel((com.example.tmdb_dagger2.model.data.MovieItem) variable);
         }
         else {
             variableSet = false;
@@ -68,7 +70,7 @@ public class ItemMovieBindingImpl extends ItemMovieBinding  {
             return variableSet;
     }
 
-    public void setResultmodel(@Nullable com.example.tmdb_dagger2.model.data.NowPlayItem Resultmodel) {
+    public void setResultmodel(@Nullable com.example.tmdb_dagger2.model.data.MovieItem Resultmodel) {
         this.mResultmodel = Resultmodel;
         synchronized(this) {
             mDirtyFlags |= 0x1L;
@@ -92,7 +94,7 @@ public class ItemMovieBindingImpl extends ItemMovieBinding  {
             mDirtyFlags = 0;
         }
         java.lang.String resultmodelPosterPath = null;
-        com.example.tmdb_dagger2.model.data.NowPlayItem resultmodel = mResultmodel;
+        com.example.tmdb_dagger2.model.data.MovieItem resultmodel = mResultmodel;
 
         if ((dirtyFlags & 0x3L) != 0) {
 
@@ -107,7 +109,7 @@ public class ItemMovieBindingImpl extends ItemMovieBinding  {
         if ((dirtyFlags & 0x3L) != 0) {
             // api target 1
 
-            com.example.tmdb_dagger2.view.BindImageAdapterKt.bindImageFromRes(this.ivPoster, resultmodelPosterPath);
+            com.example.tmdb_dagger2.view.ImageBind.BindImageAdapterKt.bindImageFromRes(this.ivPoster, resultmodelPosterPath);
         }
     }
     // Listener Stub Implementations

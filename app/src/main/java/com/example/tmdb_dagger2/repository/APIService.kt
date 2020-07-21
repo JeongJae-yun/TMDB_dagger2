@@ -16,9 +16,13 @@
 package com.example.tmdb_dagger2.repository
 
 
+import com.example.tmdb_dagger2.model.DetailInfo
 import com.example.tmdb_dagger2.model.MovieInfo
+import com.example.tmdb_dagger2.model.SearchInfo
+import com.example.tmdb_dagger2.model.SimilarInfo
 import retrofit2.Call
 import retrofit2.http.GET
+import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface APIService {
@@ -29,6 +33,53 @@ interface APIService {
         @Query("language") language:String,
         @Query("page") page:Int
     ): Call<MovieInfo>
+
+    @GET("movie/upcoming")
+    fun getUpComingMovie(
+        @Query("api_key") api_key:String,
+        @Query("language") language:String,
+        @Query("page") page:Int
+    ): Call<MovieInfo>
+
+    @GET("movie/popular")
+    fun getPopularMovie(
+        @Query("api_key") api_key:String,
+        @Query("language") language:String,
+        @Query("page") page:Int,
+        @Query("region") region:String
+    ): Call<MovieInfo>
+
+    @GET("movie/top_rated")
+    fun getTopRatedMovie(
+        @Query("api_key") api_key:String,
+        @Query("language") language:String,
+        @Query("page") page:Int,
+        @Query("region") region:String
+    ): Call<MovieInfo>
+
+    @GET("movie/{movie_id}")
+    fun getDetail(
+        @Path("movie_id") movie_id : Int,
+        @Query("api_key") api_key:String,
+        @Query("language") language:String
+    ) : Call<DetailInfo>
+
+    @GET("movie/{movie_id}/similar")
+    fun getSimilar(
+        @Path("movie_id") movie_id : Int,
+        @Query("api_key") api_key:String,
+        @Query("language") language:String,
+        @Query("page") page:Int
+    ) : Call<SimilarInfo>
+
+    @GET("search/movie")
+    fun getSearch(
+        @Query("api_key") api_key:String,
+        @Query("language") language:String,
+        @Query("query") query:String,
+        @Query("page") page:Int
+    ) : Call<SearchInfo>
+
 
     //https://api.themoviedb.org/3/movie/now_playing?api_key=dd3529cb48a78d9d2e775be63596398a&language=ko-KR&page=1
     //fun getMovieData(api_key : String, language : String, page : Int,  region:String) : Call<MovieInfo>

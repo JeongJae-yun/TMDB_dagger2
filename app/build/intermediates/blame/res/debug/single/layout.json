@@ -1,10 +1,38 @@
 [
     {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_popular_movie.xml",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\item_popular_movie.xml"
+    },
+    {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_movie_similar.xml",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\item_movie_similar.xml"
+    },
+    {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_movie_search.xml",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\item_movie_search.xml"
+    },
+    {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_toprated_movie.xml",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\item_toprated_movie.xml"
+    },
+    {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_search.xml",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\activity_search.xml"
+    },
+    {
         "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_movie.xml",
         "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\fragment_movie.xml"
     },
     {
         "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_movie.xml",
         "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\item_movie.xml"
+    },
+    {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_detail.xml",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\activity_detail.xml"
+    },
+    {
+        "merged": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_upcoming_movie.xml",
+        "source": "C:\\Dagger2_Study\\TMDB_Dagger2\\app\\src\\main\\res\\layout\\item_upcoming_movie.xml"
     }
 ]

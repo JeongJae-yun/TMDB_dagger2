@@ -7,31 +7,36 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.example.tmdb_dagger2.R;
-import com.example.tmdb_dagger2.model.data.NowPlayItem;
+import com.example.tmdb_dagger2.model.data.MovieItem;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class ItemMovieBinding extends ViewDataBinding {
   @NonNull
+  public final CardView cvPopular;
+
+  @NonNull
   public final ImageView ivPoster;
 
   @Bindable
-  protected NowPlayItem mResultmodel;
+  protected MovieItem mResultmodel;
 
   protected ItemMovieBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageView ivPoster) {
+      CardView cvPopular, ImageView ivPoster) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.cvPopular = cvPopular;
     this.ivPoster = ivPoster;
   }
 
-  public abstract void setResultmodel(@Nullable NowPlayItem resultmodel);
+  public abstract void setResultmodel(@Nullable MovieItem resultmodel);
 
   @Nullable
-  public NowPlayItem getResultmodel() {
+  public MovieItem getResultmodel() {
     return mResultmodel;
   }
 

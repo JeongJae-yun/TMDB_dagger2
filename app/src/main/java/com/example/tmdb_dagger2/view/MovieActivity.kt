@@ -18,6 +18,7 @@ package com.example.tmdb_dagger2.view
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.tmdb_dagger2.R
+import com.example.tmdb_dagger2.view.Home.MovieFragment
 
 class MovieActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,7 +30,9 @@ class MovieActivity : AppCompatActivity() {
     fun replaceFragment(){
         supportFragmentManager
             .beginTransaction()
-            .replace(R.id.container_retro_room,MovieFragment())
+            .replace(R.id.container_retro_room,
+                MovieFragment()
+            )
             .commit()
     }
 }

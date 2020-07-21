@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,16 +17,46 @@ import java.lang.Object;
 
 public abstract class FragmentMovieBinding extends ViewDataBinding {
   @NonNull
+  public final CardView cvSearch;
+
+  @NonNull
   public final RecyclerView rvNowPlaying;
+
+  @NonNull
+  public final RecyclerView rvPopular;
+
+  @NonNull
+  public final RecyclerView rvTopRated;
+
+  @NonNull
+  public final RecyclerView rvUpComing;
 
   @NonNull
   public final TextView tvTitle;
 
+  @NonNull
+  public final TextView tvTitle2;
+
+  @NonNull
+  public final TextView tvTitle3;
+
+  @NonNull
+  public final TextView tvTitle4;
+
   protected FragmentMovieBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      RecyclerView rvNowPlaying, TextView tvTitle) {
+      CardView cvSearch, RecyclerView rvNowPlaying, RecyclerView rvPopular, RecyclerView rvTopRated,
+      RecyclerView rvUpComing, TextView tvTitle, TextView tvTitle2, TextView tvTitle3,
+      TextView tvTitle4) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.cvSearch = cvSearch;
     this.rvNowPlaying = rvNowPlaying;
+    this.rvPopular = rvPopular;
+    this.rvTopRated = rvTopRated;
+    this.rvUpComing = rvUpComing;
     this.tvTitle = tvTitle;
+    this.tvTitle2 = tvTitle2;
+    this.tvTitle3 = tvTitle3;
+    this.tvTitle4 = tvTitle4;
   }
 
   @NonNull

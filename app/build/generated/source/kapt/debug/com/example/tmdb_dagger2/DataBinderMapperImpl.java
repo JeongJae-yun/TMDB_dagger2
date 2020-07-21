@@ -6,8 +6,15 @@ import android.view.View;
 import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
+import com.example.tmdb_dagger2.databinding.ActivityDetailBindingImpl;
+import com.example.tmdb_dagger2.databinding.ActivitySearchBindingImpl;
 import com.example.tmdb_dagger2.databinding.FragmentMovieBindingImpl;
 import com.example.tmdb_dagger2.databinding.ItemMovieBindingImpl;
+import com.example.tmdb_dagger2.databinding.ItemMovieSearchBindingImpl;
+import com.example.tmdb_dagger2.databinding.ItemMovieSimilarBindingImpl;
+import com.example.tmdb_dagger2.databinding.ItemPopularMovieBindingImpl;
+import com.example.tmdb_dagger2.databinding.ItemTopratedMovieBindingImpl;
+import com.example.tmdb_dagger2.databinding.ItemUpcomingMovieBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -19,15 +26,36 @@ import java.util.HashMap;
 import java.util.List;
 
 public class DataBinderMapperImpl extends DataBinderMapper {
-  private static final int LAYOUT_FRAGMENTMOVIE = 1;
+  private static final int LAYOUT_ACTIVITYDETAIL = 1;
 
-  private static final int LAYOUT_ITEMMOVIE = 2;
+  private static final int LAYOUT_ACTIVITYSEARCH = 2;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(2);
+  private static final int LAYOUT_FRAGMENTMOVIE = 3;
+
+  private static final int LAYOUT_ITEMMOVIE = 4;
+
+  private static final int LAYOUT_ITEMMOVIESEARCH = 5;
+
+  private static final int LAYOUT_ITEMMOVIESIMILAR = 6;
+
+  private static final int LAYOUT_ITEMPOPULARMOVIE = 7;
+
+  private static final int LAYOUT_ITEMTOPRATEDMOVIE = 8;
+
+  private static final int LAYOUT_ITEMUPCOMINGMOVIE = 9;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(9);
 
   static {
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.tmdb_dagger2.R.layout.activity_detail, LAYOUT_ACTIVITYDETAIL);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.tmdb_dagger2.R.layout.activity_search, LAYOUT_ACTIVITYSEARCH);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.tmdb_dagger2.R.layout.fragment_movie, LAYOUT_FRAGMENTMOVIE);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.tmdb_dagger2.R.layout.item_movie, LAYOUT_ITEMMOVIE);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.tmdb_dagger2.R.layout.item_movie_search, LAYOUT_ITEMMOVIESEARCH);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.tmdb_dagger2.R.layout.item_movie_similar, LAYOUT_ITEMMOVIESIMILAR);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.tmdb_dagger2.R.layout.item_popular_movie, LAYOUT_ITEMPOPULARMOVIE);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.tmdb_dagger2.R.layout.item_toprated_movie, LAYOUT_ITEMTOPRATEDMOVIE);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.tmdb_dagger2.R.layout.item_upcoming_movie, LAYOUT_ITEMUPCOMINGMOVIE);
   }
 
   @Override
@@ -39,6 +67,18 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         throw new RuntimeException("view must have a tag");
       }
       switch(localizedLayoutId) {
+        case  LAYOUT_ACTIVITYDETAIL: {
+          if ("layout/activity_detail_0".equals(tag)) {
+            return new ActivityDetailBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_detail is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYSEARCH: {
+          if ("layout/activity_search_0".equals(tag)) {
+            return new ActivitySearchBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_search is invalid. Received: " + tag);
+        }
         case  LAYOUT_FRAGMENTMOVIE: {
           if ("layout/fragment_movie_0".equals(tag)) {
             return new FragmentMovieBindingImpl(component, view);
@@ -50,6 +90,36 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new ItemMovieBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for item_movie is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ITEMMOVIESEARCH: {
+          if ("layout/item_movie_search_0".equals(tag)) {
+            return new ItemMovieSearchBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for item_movie_search is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ITEMMOVIESIMILAR: {
+          if ("layout/item_movie_similar_0".equals(tag)) {
+            return new ItemMovieSimilarBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for item_movie_similar is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ITEMPOPULARMOVIE: {
+          if ("layout/item_popular_movie_0".equals(tag)) {
+            return new ItemPopularMovieBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for item_popular_movie is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ITEMTOPRATEDMOVIE: {
+          if ("layout/item_toprated_movie_0".equals(tag)) {
+            return new ItemTopratedMovieBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for item_toprated_movie is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ITEMUPCOMINGMOVIE: {
+          if ("layout/item_upcoming_movie_0".equals(tag)) {
+            return new ItemUpcomingMovieBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for item_upcoming_movie is invalid. Received: " + tag);
         }
       }
     }
@@ -96,20 +166,28 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerBrLookup {
-    static final SparseArray<String> sKeys = new SparseArray<String>(2);
+    static final SparseArray<String> sKeys = new SparseArray<String>(3);
 
     static {
       sKeys.put(0, "_all");
-      sKeys.put(1, "resultmodel");
+      sKeys.put(1, "detailInfo");
+      sKeys.put(2, "resultmodel");
     }
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(2);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(9);
 
     static {
+      sKeys.put("layout/activity_detail_0", com.example.tmdb_dagger2.R.layout.activity_detail);
+      sKeys.put("layout/activity_search_0", com.example.tmdb_dagger2.R.layout.activity_search);
       sKeys.put("layout/fragment_movie_0", com.example.tmdb_dagger2.R.layout.fragment_movie);
       sKeys.put("layout/item_movie_0", com.example.tmdb_dagger2.R.layout.item_movie);
+      sKeys.put("layout/item_movie_search_0", com.example.tmdb_dagger2.R.layout.item_movie_search);
+      sKeys.put("layout/item_movie_similar_0", com.example.tmdb_dagger2.R.layout.item_movie_similar);
+      sKeys.put("layout/item_popular_movie_0", com.example.tmdb_dagger2.R.layout.item_popular_movie);
+      sKeys.put("layout/item_toprated_movie_0", com.example.tmdb_dagger2.R.layout.item_toprated_movie);
+      sKeys.put("layout/item_upcoming_movie_0", com.example.tmdb_dagger2.R.layout.item_upcoming_movie);
     }
   }
 }

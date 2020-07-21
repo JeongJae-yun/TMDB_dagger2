@@ -23,6 +23,9 @@ import com.example.tmdb_dagger2.di.APIModule
 import com.example.tmdb_dagger2.di.DaggerAPIComponent
 import com.example.tmdb_dagger2.repository.APIURL
 import com.example.tmdb_dagger2.repository.RetrofitRepository
+import com.example.tmdb_dagger2.view.Detail.DetailViewModel
+import com.example.tmdb_dagger2.view.Home.MovieViewModel
+import com.example.tmdb_dagger2.view.Search.SearchViewModel
 import javax.inject.Inject
 
 class MovieViewModelFactory : ViewModelProvider.Factory {
@@ -36,8 +39,15 @@ class MovieViewModelFactory : ViewModelProvider.Factory {
         val apiComponent :APIComponent =  MyRetroApplication.apiComponent
 
         apiComponent.inject(this)
+
         if (modelClass.isAssignableFrom(MovieViewModel::class.java)) {
             return MovieViewModel(retrofitRepository) as T
+        }
+        if (modelClass.isAssignableFrom(DetailViewModel::class.java)) {
+            return DetailViewModel(retrofitRepository) as T
+        }
+        if (modelClass.isAssignableFrom(SearchViewModel::class.java)) {
+            return SearchViewModel(retrofitRepository) as T
         }
         throw IllegalArgumentException("Unknown ViewModel class")
     }

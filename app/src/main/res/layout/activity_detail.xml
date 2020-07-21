@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="detailInfo"
+            type="com.example.tmdb_dagger2.model.DetailInfo">
+        </variable>
+    </data>
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:scrollbars="none"
+        >
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".view.Detail.DetailActivity">
+
+    <FrameLayout
+        android:id="@+id/detailFrame"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/info_linear">
+
+        <Button
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/ic_baseline_arrow_back_24"
+            />
+
+        <ImageView
+            android:id="@+id/ivBackDrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:imageLoad="@{detailInfo.backdrop_path}"
+            android:contentDescription="@null"
+            android:background="#000000"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="4dp"
+            >
+            <ImageView
+                android:id="@+id/ivMainPoster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:detailimageLoad="@{detailInfo.poster_path}"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                />
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/info_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/detailFrame"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/detailLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(detailInfo.title)}"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:layout_margin="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvReleaseDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(detailInfo.release_date)}"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:layout_margin="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvOverview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{detailInfo.overview}"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:layout_margin="5dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detailLinear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/detailLinear"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MORE INFOMATION"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="5dp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adult Available : "
+                        android:textColor="#ffffff"
+                        android:layout_weight="0.3"
+                        android:textSize="17sp"
+                        android:layout_margin="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvNowAdult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{String.valueOf(detailInfo.adult)}"
+                        android:textColor="#ffffff"
+                        android:layout_weight="0.7"
+                        android:textSize="17sp"
+                        android:layout_margin="5dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Running Time : "
+                        android:textColor="#ffffff"
+                        android:layout_weight="0.3"
+                        android:textSize="17sp"
+                        android:layout_margin="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvRuntime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{String.valueOf(detailInfo.runtime)}"
+                        android:textColor="#ffffff"
+                        android:layout_weight="0.7"
+                        android:textSize="17sp"
+                        android:layout_margin="5dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Average Star Count &amp; Vote Count : "
+                        android:textColor="#ffffff"
+                        android:layout_weight="0.3"
+                        android:textSize="17sp"
+                        android:layout_margin="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvVoteAverage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{String.valueOf(detailInfo.vote_average)}"
+                        android:textColor="#ffffff"
+                        android:layout_weight="0.35"
+                        android:textSize="17sp"
+                        android:layout_margin="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvVoteCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{String.valueOf(detailInfo.vote_count)}"
+                        android:textColor="#ffffff"
+                        android:layout_weight="0.35"
+                        android:textSize="17sp"
+                        android:layout_margin="5dp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:text="Similar Movie"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_similar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
