@@ -30,13 +30,6 @@
 |----------|----------|----------|
 |<img width="250" height="450" src="https://user-images.githubusercontent.com/55985789/88053482-d78b8780-cb96-11ea-9aaa-e4a5246d35f6.png">|<img width="250" height="450" src="https://user-images.githubusercontent.com/55985789/88053477-d65a5a80-cb96-11ea-8d52-635eefa70c18.png">|<img width="250" height="450" src="https://user-images.githubusercontent.com/55985789/88053755-47017700-cb97-11ea-8809-6973e3f753df.png">|
 
-|-------------|----------------|
-
-
-
-
-
-
 
 ***
 
