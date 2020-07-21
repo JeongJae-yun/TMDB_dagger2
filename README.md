@@ -21,6 +21,25 @@
 
 ***
 
+## ScreenShots
+|Main Page1 | Main Page 2|
+|----------|----------|
+|<img width="250" height="450" src="https://user-images.githubusercontent.com/55985789/88053239-6c41b580-cb96-11ea-93aa-0789db4366ef.png">|<img width="250" height="450" src="https://user-images.githubusercontent.com/55985789/88053251-72d02d00-cb96-11ea-8270-0efdb40b1440.png">|
+
+|Detail Page1 | Detail Page 2| Search Page|
+|----------|----------|----------|
+|<img width="250" height="450" src="https://user-images.githubusercontent.com/55985789/88053482-d78b8780-cb96-11ea-9aaa-e4a5246d35f6.png">|<img width="250" height="450" src="https://user-images.githubusercontent.com/55985789/88053477-d65a5a80-cb96-11ea-8d52-635eefa70c18.png">|<img width="250" height="450" src="https://user-images.githubusercontent.com/55985789/88053755-47017700-cb97-11ea-8809-6973e3f753df.png">|
+
+|-------------|----------------|
+
+
+
+
+
+
+
+***
+
 
 ## 전체흐름
 <image width ="700" height="400" src="https://user-images.githubusercontent.com/55985789/87903649-7df06380-ca97-11ea-8449-965a72b4058b.png"/>
